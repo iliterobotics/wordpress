@@ -1,0 +1,1 @@
+[31-Jan-2014 12:49:16] PHP Fatal error:  Call to undefined function  get_header() in /home4/gdrake/public_html/iliterobotics.org/wp/wp-content/themes/ilite/index.php on line 3

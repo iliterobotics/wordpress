@@ -1,0 +1,46 @@
+@media print
+  {
+div.header-img {
+    display: none!important;
+}
+
+.navbar {
+    display: none!important;
+}
+
+div.container.container-footer {
+    display: none!important;
+}
+div.thumbnail {
+    background-color: #ffffff!important;
+}
+div.textwidget {
+    display: none!important;
+}
+
+#wpadminbar {
+    display: none!important;
+}
+
+body {
+    background: none!important;
+    background-color: white!important;
+    font-size: 18px!important;
+    font-family: Georgia!important;
+}
+
+div.hero-unit.hero-title {
+    border-style: solid!important;
+    border-width: 1px!important;
+    background-color: white!important;
+    margin-bottom: 30px!important;
+}
+
+ul.breadcrumb {
+    margin-top: 30px!important;
+}
+
+div.span6 blockquote p {
+    font-size: 16px!important;
+}
+}	

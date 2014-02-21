@@ -1,0 +1,239 @@
+
+/** login link colors **/
+/*.login #nav a, 
+.login #backtoblog a
+	{
+	color: #43942d !important;
+	}
+
+.login #nav a:hover, 
+.login #backtoblog a:hover
+	{
+	color: #43942d !important;
+	}*/
+
+/** colors-classic.css **/
+@import url("/wp-admin/css/colors-classic.min.css?ver=3.5");
+		
+/** background color on menu **/
+#adminmenuback,
+#adminmenuwrap
+	{
+	background-color: #69219b;
+	border-color: #4c1872 !important;
+	}
+	
+.folded #adminmenuback,
+.folded #adminmenuwrap
+	{
+	border-color: #4c1872 !important;
+	}
+	
+/** menu list **/
+#adminmenu .menu-top
+	{
+	border-top-color: #852ac6 !important;
+	border-bottom-color: #4c1872 !important;
+	}
+
+/** menu arrow icons if dark then light if light then dark **/
+#adminmenu .wp-has-submenu:hover .wp-menu-toggle, 
+#adminmenu .wp-menu-open .wp-menu-toggle 
+	{
+				background: transparent url(/wp-content/themes/ilite/inc/purple-arrows-light.png) no-repeat -2px 6px;
+	}
+
+/** folded menu **/
+.folded #adminmenu .wp-submenu-wrap, 
+.folded #adminmenu .wp-submenu ul
+	{
+	border-color: #4c1872;
+	}
+	
+.folded #adminmenu .wp-submenu .wp-submenu-head
+	{
+	background-color: #69219b;
+	border-top-color: #852ac6 !important;
+	border-bottom-color: #4c1872 !important;
+	color: #ffffff !important;
+	}
+
+/** current grey menu item **/
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, 
+#adminmenu li.current a.menu-top, .folded #adminmenu li.wp-has-current-submenu, 
+.folded #adminmenu li.current.menu-top,
+#adminmenu .wp-menu-arrow, 
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head 
+	{
+	border-top-color: gray !important;
+	border-bottom-color: #6D6D6D !important;
+	color: #fff !important;
+	}
+
+/** menu separator **/
+#adminmenu .wp-menu-separator
+	{
+	background-color: #5a1d87 !important;
+	border-color: #4c1872 !important;
+	}
+	
+#adminmenu .separator
+	{
+	border-color: #5a1d87 !important;
+	}
+
+/** link colours on menu **/
+#adminmenu .menu-top a,
+#adminmenu .menu-top a:visited
+	{
+	color: #ffffff !important;
+	}
+	
+#adminmenu .menu-top a:hover,
+#adminmenu .menu-top a:active
+	{
+	color: #36005c !important;
+	}
+
+/** collapse menu **/
+#collapse-menu
+	{
+	color: #ffffff !important;
+	opacity: 0.75;
+	}
+	
+#collapse-menu:hover
+	{
+	color: #36005c !important;
+	opacity: 1;
+	}
+
+.folded #collapse-menu
+	{
+	display: block;
+	opacity: 1;
+	}
+
+/** hover color of menu children */
+#adminmenu .wp-submenu a,
+#adminmenu .wp-submenu a:visited
+	{
+	color: #43942d !important;
+	}
+	
+#adminmenu .wp-submenu a:hover,
+#adminmenu .wp-submenu a:active		 
+	{
+	color: #43942d !important;
+	background-color: #f4eafb !important;
+	}
+
+/** link colours in main window **/
+a, 
+#adminmenu a, 
+#poststuff #edButtonPreview, 
+#poststuff #edButtonHTML, 
+#the-comment-list p.comment-author strong a, 
+#media-upload a.del-link, 
+#media-items a.delete, 
+.plugins a.delete, 
+.plugins .inactive a,		
+.ui-tabs-nav a
+	{
+	color: #43942d;
+	}
+
+a:hover, 
+a:active, 
+a:focus,
+#sidemenu a.current,
+#wphead #viewsite a:hover, 
+#the-comment-list .comment a:hover, 
+#rightnow a:hover, #media-upload a.del-link:hover, 
+div.dashboard-widget-submit input:hover, 
+.subsubsub a:hover, .subsubsub a.current:hover, 
+.ui-tabs-nav a:hover, .plugins .inactive a:hover, 
+#all-plugins-table .plugins .inactive a:hover, 
+#search-plugins-table .plugins .inactive a:hover
+	{
+	color: #43942d;!important
+	}
+
+/** primary button colors **/
+		input.button-primary, button.button-primary, a.button-primary, .wp-core-ui .button-primary
+	{
+	border-color: #852ac6!important;
+	font-weight: bold!important;
+	color: #fff!important;			
+	background: #69219b!important;
+	background: -moz-linear-gradient(top, #852ac6 0%, #4c1872 100%)!important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#852ac6), color-stop(100%,#4c1872))!important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #852ac6 0%,#4c1872 100%)!important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #852ac6 0%,#4c1872 100%)!important; /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #852ac6 0%,#4c1872 100%)!important; /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#852ac6', endColorstr='#4c1872',GradientType=0 )!important; /* IE6-9 */
+	background: linear-gradient(top, #852ac6 0%,#4c1872 100%)!important; /* W3C */
+	text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0!important;
+	}
+
+input.button-primary:hover, 
+button.button-primary:hover,
+a.button-primary:hover, 
+a.button-primary:focus, 
+a.button-primary:active,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:active,
+.wp-core-ui .button-:hover
+	{
+	border-color: #300f48!important;
+	color: #f4eafb!important;
+	}
+	
+input.button-primary:active,
+button.button-primary:active,
+a.button-primary:active, .wp-core-ui .button-primary:active
+	{
+	background: #4c1872!important;
+	background: -moz-linear-gradient(top, #4c1872 0%, #852ac6 100%)!important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c1872), color-stop(100%,#852ac6))!important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4c1872 0%,#852ac6 100%)!important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4c1872 0%,#852ac6 100%)!important; /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #4c1872 0%,#852ac6 100%)!important; /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c1872', endColorstr='#852ac6',GradientType=0 )!important; /* IE6-9 */
+	background: linear-gradient(top, #4c1872 0%,#852ac6 100%)!important; /* W3C */
+	color: #f4eafb!important;
+	}
+
+.button-primary-disabled,
+.button-primary[disabled],
+.button-primary:disabled 
+	{
+    color: #f4eafb !important; 
+	border-color: #300f48 !important;
+    background: #69219b !important;
+	}
+
+/** highlight class **/
+.highlight 
+	{
+	background-color: #f4eafb;
+	}
+
+
+.scottsweb-credit
+	{
+	background-color: #f4eafb !important;
+	border-bottom-color: #d2abed !important;
+	}
+	
+input[type="text"],textarea {
+    border-color: #d4d1ee!important;
+}
+
+input[type="text"]:focus {
+border-style: solid;
+border-width: 1px;
+border-color: #4c1872!important;
+	}
+
+

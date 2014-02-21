@@ -1,0 +1,6 @@
+{
+  "html": "<article>\n  <section>\n    <div class=\"layout-two-column\">\n      <div class=\"align-center\">\n        <p>Red</p>\n  <p class=\"text-x-small\">1220 - 78 - 4001</p> <p class=\"text-x-large\"><b>65</b></p>\n      </div>\n      <div class=\"align-center\">\n        <p>Blue</p>\n <p class=\"text-x-small\">4466 - 1885 - 401</p>  <p class=\"text-x-large\"><b>120</b></p>\n      </div>\n    </div>\n  </section>\n  <footer>\n    <p>Qual 7 - 0:15</p>\n  </footer>\n</article>\n",
+  "notification": {
+    "level": "DEFAULT"
+  }
+}

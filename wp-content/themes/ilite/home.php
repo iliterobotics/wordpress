@@ -15,6 +15,7 @@ endif; ?>
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
     <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
   </ol>
 
   <!-- Carousel items -->
@@ -72,7 +73,7 @@ endif; ?>
 </div>
 
 <div class="span6 headlines"><div style="text-align:center"><h2>NEWS &amp; UPDATES:</h2></div>   
-<?php $posts_query = new WP_Query('posts_per_page=4');
+<?php $posts_query = new WP_Query('posts_per_page=5');
         while ($posts_query->have_posts()) : $posts_query->the_post();
     ?>
     <span class="headlines-date"><?php the_time('Y/m/d') ?></span> <span class="headlines-title"><?php the_title(); ?></span><br/>

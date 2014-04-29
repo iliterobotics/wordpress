@@ -110,10 +110,18 @@
           endif;
         ?>
             <ul class="nav pull-right hidden-tablet">
-                <li class="social"><a href="http://gplus.to/ilite" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/social/google-plus.png" alt="Google+"/></a></li>
-                <li class="social"><a href="http://www.facebook.com/pages/First-Team-1885/191876367489335" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/social/facebook.png" alt="Facebook"/></a></li>
-                <li class="social"><a href="http://twitter.com/Team1885FRC" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/social/twitter-2.png" alt="Twitter"/></a></li>
-                <li class="social"><a href="http://www.youtube.com/user/FIRSTTeam1885/videos" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/social/youtube.png" alt="YouTube"/></a></li>
+                <li class="social"><a href="http://github.com/iliterobotics" target="_blank">
+	                <i class="icon-github"></i>
+                </a></li>
+                <li class="social"><a href="http://www.facebook.com/iliterobotics" target="_blank">
+	                <i class="icon-facebook"></i>
+                </a></li>
+                <li class="social"><a href="http://twitter.com/team1885" target="_blank">
+	                <i class="icon-twitter"></i>
+                </a></li>
+                <li class="social"><a href="http://www.youtube.com/user/FIRSTTeam1885/videos" target="_blank">
+	                <i class="icon-youtube"></i>
+                </a></li>
             </ul>
         </nav>
       </div>

@@ -3,7 +3,7 @@ wordpress
 
 Portions of the WordPress theme used in http://iliterobotics.org/
 
-Designed and maintained with :love: by <a href="https://github.com/LabLayers">Victor Lourng</a> and FRC team 1885.
+Designed and maintained with :heart: by <a href="https://github.com/LabLayers">Victor Lourng</a> and FRC team 1885.
 
 The oAuth provider code is NOT included.
 

@@ -3,10 +3,12 @@ wordpress
 
 Portions of the WordPress theme used in http://iliterobotics.org/
 
-Designed and maintained by @lablayers.
+Designed and maintained with :love: by <a href="https://github.com/LabLayers">Victor Lourng</a> and FRC team 1885.
 
 The oAuth provider code is NOT included.
 
-Everything is under the GPL license unless otherwise specified.
+This theme and its components, like WordPress, is licensed under the GPLv3 license unless otherwise specified.
 
-Take this code and build something awesome! :heart:
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Enjoy!

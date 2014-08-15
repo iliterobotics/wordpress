@@ -60,6 +60,7 @@ function ts_add_contact_fields( $contactmethods ) {
 	$contactmethods['twitter'] = 'Twitter';
 	$contactmethods['googleplus'] = 'Google+';
 	$contactmethods['instagram'] = 'Instagram';
+	$contactmethods['github'] = 'GitHub';
 
 	unset( $contactmethods['yim'] );
 	unset( $contactmethods['aim'] );

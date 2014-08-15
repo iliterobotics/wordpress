@@ -353,6 +353,11 @@ function instagram_function($atts, $content = null) {
 extract(shortcode_atts(array("link" => '//'), $atts));
 return '<a href="' .$link. '" target="_blank"><i class="icon icon-camera-alt"></i></a> ';}
 add_shortcode("instagram", "instagram_function");
+// [github link=""]
+function github_function($atts, $content = null) {
+extract(shortcode_atts(array("link" => '//'), $atts));
+return '<a href="' .$link. '" target="_blank"><i class="icon icon-github"></i></a> ';}
+add_shortcode("github", "github_function");
 // [external link=""]
 function external_function($atts, $content = null) {
 extract(shortcode_atts(array("link" => '//'), $atts));

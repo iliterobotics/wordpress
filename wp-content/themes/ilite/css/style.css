@@ -42,7 +42,7 @@ body.subtle-bg {background-repeat: repeat;background-position:center top;}
  box-shadow: 0px 3px 20px rgba(48,48,48,0.75);
 }
 /* mobile navbar */
-navbar-mobile .navbar-inner {
+.navbar-mobile .navbar-inner {
  max-width: 100%!important;
  margin-left: 0px!important;
  margin-right: 0px!important;
@@ -186,7 +186,7 @@ ul li ul li[class*=span] {
  border-bottom-width: 1px;
 }
 .navbar-header ul.dropdown-menu li a:hover { background-color: #7d40c2; }
-.navbar-header li.open { padding-bottom: 4px; }
+.navbar-header li { padding-bottom: 4px; margin-bottom: -4px; }
 .navbar-header li.social a { padding-top: 12px; -webkit-font-smoothing: antialiased; }
 /* content */
 .row-content { min-height: 800px; }

@@ -11,7 +11,7 @@ require_once locate_template('/lib/customcssjs.php');      // Custom JS and CSS 
 require_once locate_template('/lib/custom.php');      // Custom functions
 require_once locate_template('/lib/admin.php');      // Backend functions
 require_once locate_template('/lib/admin-colors.php');      // Backend theme functions
-require_once locate_template('/lib/hello.php');      // Theme docs
+require_once locate_template('/lib/docs.php');      // Theme docs
 ?>
 <?php
 define( 'CONCATENATE_SCRIPTS', false );

@@ -15,7 +15,7 @@ function setup_theme_admin_menus() {
 }  
 // We also need to add the handler function for the top level menu  
 function theme_docs_page() {  
-wp_enqueue_style('bootstrap',get_bloginfo('wpurl').'/wp-content/themes/ilite/css/bootstrap/bootstrap.min.css',true);
+// wp_enqueue_style('bootstrap',get_bloginfo('wpurl').'/wp-content/themes/ilite/css/bootstrap/bootstrap.min.css',true);
 ?>
 <h1 class="page_header"><?php screen_icon('themes'); ?> Documentation</h2>
 <font size="3">
@@ -30,6 +30,10 @@ wp_enqueue_style('bootstrap',get_bloginfo('wpurl').'/wp-content/themes/ilite/css
 function theme_front_page_settings() {  
     echo "Front page";  
 }  
+function theme_docs_welcome() {?>
+<meta http-equiv="REFRESH" content="0;url=https://docs.google.com/document/d/1h9CFtyYowrU9iU3H30XW9rShcHoM-SH0eBajB2PJxhk/edit?usp=sharing">
+Go to <a href="https://docs.google.com/document/d/1h9CFtyYowrU9iU3H30XW9rShcHoM-SH0eBajB2PJxhk/edit?usp=sharing">https://docs.google.com/document/d/1h9CFtyYowrU9iU3H30XW9rShcHoM-SH0eBajB2PJxhk/edit?usp=sharing</a>
+<?php }
 function theme_docs_icons() {?>
 <meta http-equiv="REFRESH" content="0;url=http://iliterobotics.org/wp-content/themes/ilite/fonts/fontello.html">
 Go to <a href="/wp-content/themes/ilite/fonts/fontello.html">http://iliterobotics.org/wp-content/themes/ilite/fonts/fontello.html</a>

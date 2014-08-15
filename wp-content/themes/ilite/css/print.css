@@ -1,9 +1,19 @@
 @media print
   {
+* {
+	background: white!important;
+	color: black;
+}
+body, .bgwrap {
+	background: white!important;
+	background-image: none!important;
+}
 div.header-img {
     display: none!important;
 }
-
+.quotation {
+	background: none!important;
+}
 .navbar {
     display: none!important;
 }
@@ -17,11 +27,12 @@ div.thumbnail {
 div.textwidget {
     display: none!important;
 }
-
 #wpadminbar {
     display: none!important;
 }
-
+iframe {
+	display: none!important;
+}
 body {
     background: none!important;
     background-color: white!important;
@@ -34,10 +45,15 @@ div.hero-unit.hero-title {
     border-width: 1px!important;
     background-color: white!important;
     margin-bottom: 30px!important;
+	padding: 20px!important;
+	margin-top: 15px!important;
+
 }
 
 ul.breadcrumb {
     margin-top: 30px!important;
+    border-top: 1px solid black;
+    border-radius: 0px!important;
 }
 
 div.span6 blockquote p {

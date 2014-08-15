@@ -8,42 +8,28 @@ get_header(); ?>
 endif; ?>
 <div id="homeCarousel" class="carousel carousel-homepage slide" style="margin-top: -20px;">
 
+  <?php
+    $slideshow = array( 'post_type' => 'slideshow', );
+    $loop = new WP_Query( $slideshow );
+    $dotCount = 0;
+    $slideCount = 0;
+   ?>
+
   <!-- Carousel nav -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
+   	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <li data-target="#myCarousel" data-slide-to="<?php print $dotCount; ?>" class="<?php if ($dotCount == 0) { ?>active<?php } $dotCount++; ?>"></li>
+    <?php endwhile; ?>
   </ol>
 
   <!-- Carousel items -->
   <div class="carousel-inner">
-  <!-- Base Item -->
-  <div id="post-01" class="item active" style="height:310px!important;">
-      <div class="carousel-slide-bg" style="background:url(/wp-content/themes/ilite/img/home-placeholder-stl2013.jpg);width:100%;height:516px;background-size:cover;background-position:bottom;"></div>
-      <!--<img width="1024" height="516" src="/wp-content/themes/ilite/img/home-lead-image.jpg" class="attachment-large wp-post-image" style="width:100%;height:310px!important;" alt="cheers">-->
-      <div class="overlay-unit">
-        We are <b>team 1885, ILITE Robotics from Haymarket, Virginia.</b> Made up of students from high schools across Prince William County, Virginia, we are <b><a href="/about/mission-vision" style="color:#65E144">Inspiring Leaders in Technology and Engineering</a></b>, while competing in FIRST Robotics. We have served as a stand out team with the primary goal of instilling young persons with the skills and passion to pursue careers in science, technology, engineering, and math…
-       <br/><br/><a href="about/mission-vision" class="shortcode button green">Read More &rarr;</a></div>
-  </div>
-    <?php
-    $slideshow = array( 'post_type' => 'slideshow', );
-    $loop = new WP_Query( $slideshow );
-    function add_stylesheet(){
-         wp_enqueue_style('my_styles','http://fonts.googleapis.com/css?family=Open+Sans:300');
-    }
-    add_action('wp_print_styles', 'add_stylesheet');
-    ?>
-    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+     <?php $slidebg = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
     <!-- Item -->
-    <div id="post-<?php the_ID(); ?>" class="item" style="height:310px!important;">
-          <script>$('#homeCarousel').carousel()</script>
-      <?php $large = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
-      echo ''.get_the_post_thumbnail($post->ID, 'large');'' ?>
-      <div class="overlay-unit">
-                <strong><?php the_title(); ?></strong><br />
+    <div id="post-<?php the_ID(); ?>" class="<?php if ($slideCount == 0) { ?>active <?php } $slideCount++; ?>item" style="background-image: url(<?php print $slidebg; ?>);">
+           <div class="overlay-unit">
+                <strong class="entry-title"><?php the_title(); ?></strong><br />
                 <div class="entry-content"><?php the_content(); ?></div>
                 <a href="<?php echo esc_html( get_post_meta( get_the_ID(), 'slideshow_button_text', true ) ); ?>" class="<?php echo esc_html( get_post_meta( get_the_ID(), 'slideshow_button_color', true ) ); ?>">
                 <?php echo esc_html( get_post_meta( get_the_ID(), 'slideshow_button_url', true ) ); ?></a>
@@ -56,6 +42,9 @@ endif; ?>
   <a class="carousel-control left" href="#homeCarousel" data-slide="prev" style="z-index:999">&lsaquo;</a>
   <a class="carousel-control right" href="#homeCarousel" data-slide="next" style="z-index:999">&rsaquo;</a>
   </div>
+  <!-- Carousel scripts -->
+  <script>
+  </script>
 
 </div>
 </div>

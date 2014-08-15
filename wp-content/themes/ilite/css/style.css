@@ -373,8 +373,18 @@ a.carousel-control.right {
  position: relative;
  z-index: 0;
 }
-.carousel-homepage img.attachment-large.wp-post-image{min-width:100%!important;}
-.carousel-homepage img.attachment-large.wp-post-image {background-size: cover!important;min-height: 100%!important;}
+.carousel-homepage .item {
+ height:310px!important;
+ background-size: cover;
+ background-position: center 10%;
+}
+.entry-title {
+ font-weight: bold;
+ display: inline-block;
+ font-size: 125%;
+ line-height: 1.5em;
+ margin-bottom: 15px;
+}
 /* homepage links */
 .fez{-webkit-transition: opacity 800ms cubic-bezier(0.51,0.01,0.37,0.98);
 -moz-transition: opacity 800ms cubic-bezier(0.51,0.01,0.37,0.98);

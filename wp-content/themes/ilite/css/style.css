@@ -187,6 +187,7 @@ ul li ul li[class*=span] {
 }
 .navbar-header ul.dropdown-menu li a:hover { background-color: #7d40c2; }
 .navbar-header li.open { padding-bottom: 4px; }
+.navbar-header li.social a { padding-top: 12px; -webkit-font-smoothing: antialiased; }
 /* content */
 .row-content { min-height: 800px; }
 .content-block { padding: 30px; }
